@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500");
 :root {
   --header-height: 4rem;
 
@@ -8,12 +8,11 @@
   --first-color: #000000;
   --first-color-alt: hsl(var(--hue), var(--sat), 36%);
   --body-color: hsl(var(--hue), 100%, 99%);
-  --container-color: #FFF;
-  --body-font: 'Roboto';
+  --container-color: #fff;
+  --body-font: "Roboto";
   --h1-font-size: 1.5rem;
-  --normal-font-size: .938rem;
-  --tiny-font-size: .625rem;
-
+  --normal-font-size: 0.938rem;
+  --tiny-font-size: 0.625rem;
 
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -35,10 +34,12 @@
 html {
   scroll-behavior: smooth;
 }
-
+main {
+  margin-bottom: 4rem;
+}
 body {
   margin: var(--header-height) 0 0 0;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
@@ -62,7 +63,7 @@ a {
   /* padding: 4.5rem 0 2rem; */
 }
 
-.section__title span{
+.section__title span {
   color: #333;
   font-style: normal;
   font-weight: 100;
@@ -84,7 +85,6 @@ a {
 
 /*=============== LAYOUT ===============*/
 .container {
-
 }
 
 /*=============== HEADER ===============*/
@@ -95,12 +95,12 @@ a {
   width: 100%;
   background-color: var(--container-color);
   z-index: var(--z-fixed);
-  transition: .4s;
+  transition: 0.4s;
 }
 
-#menu-img{
-    margin-left: 0.3rem;
-    width: 26px;
+#menu-img {
+  margin-left: 0.3rem;
+  width: 26px;
 }
 
 /*=============== NAV ===============*/
@@ -126,24 +126,22 @@ a {
   margin-right: 1.2rem;
 }
 
-
 .nav__menu {
-position: fixed;
-bottom: 0;
-left: 0;
-background-color: var(--container-color);
-box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
-width: 100%;
-height: 4rem;
-padding: 0 1rem;
-display: grid;
-align-content: center;
-border-radius: 1.25rem 1.25rem 0 0;
-transition: .4s;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: var(--container-color);
+  box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+  width: 100%;
+  height: 4rem;
+  padding: 0 1rem;
+  display: grid;
+  align-content: center;
+  border-radius: 1.25rem 1.25rem 0 0;
+  transition: 0.4s;
 }
 
-
-.nav__list, 
+.nav__list,
 .nav__link {
   display: flex;
 }
@@ -169,21 +167,45 @@ transition: .4s;
   font-size: 1.5rem;
 }
 
+.title{
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+#view-all{
+  border: 2px solid black;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+
 /*Active link*/
 .active-link {
   position: relative;
   color: var(--first-color);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-
+#black-bar {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  height: 48px;
+  
+  background-color: #333333;
+  margin: 3px 15px;
+  color: white;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
 
 /*=============== Cards Images ===============*/
 
 * {
   box-sizing: border-box;
 }
-
 
 /* Float four columns side by side */
 .column {
@@ -194,8 +216,7 @@ transition: .4s;
 
 /* Remove extra left and right margins, due to padding in columns */
 .row {
-  margin: 10px 10px;
-  
+  margin: 15px 10px;
 }
 
 /* Clear floats after the columns */
@@ -210,21 +231,56 @@ transition: .4s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   text-align: center;
   background-color: #f1f1f1;
-  height: 5rem
+  height: 5.6rem;
+  border-radius: 25px;
 }
-.card p{
+.card p {
   color: #000;
 }
 
-.wellness-overview-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  line-height: 24px;
-  font-weight: 500;
+/* Wellness Section */
+.wellness {
+  background-color: #f2f1fc;
+  padding: 4%;
+  display: block;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 20px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
-.scrollmenu{
+#wellness-params {
+  display: flex;
+  position: relative;
+  margin-top: 0.7rem;
+  margin-bottom: 0.3rem;
+  left: 1.9rem;
+}
+#overweight {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 0.2rem 0.33rem;
+  font-size: 0.9rem;
+  font-weight: 100;
+  color: #fa725f;
+  margin: 0.7rem 0.6rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.wellness-card {
+  font-size: 1.1rem;
+  background-color: #FFF;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 0.25rem;
+  margin: 0.32rem auto;
+  display: inline-flex;
+  height: 1.8rem;
+  width: 8rem;
+  justify-content: center;
+}
+
+.scrollmenu {
   overflow: auto;
   white-space: nowrap;
 }
@@ -262,11 +318,90 @@ transition: .4s;
   top: 12px;
   left: 0px;
 }
-.top-left img{
+.top-left img {
   width: 4rem;
 }
 .top-right {
   position: absolute;
   top: 12px;
   right: 16px;
+}
+/* Slider */
+
+.slider-container {
+  padding: 0.5rem;
+}
+.slider-wrapper {
+  position: relative;
+  max-width: 95%;
+  margin: auto;
+}
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* box-shadow: 0 1.5rem 3rem -0.75rem; */
+  border-radius: 1.2rem;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+}
+/* Understanding */
+
+.understanding {
+  padding: 0.5rem;
+}
+.understanding-wrapper {
+  position: relative;
+  max-width: 95%;
+  margin: auto;
+}
+.under-slider {
+  display: flex;
+  /* aspect-ratio: 16/9; */
+  overflow-x: scroll;
+  /* scroll-snap-type: x mandatory; */
+  scroll-behavior: smooth;
+  /* box-shadow: 0 1.5rem 3rem -0.75rem; */
+  border-radius: 1.2rem;
+  height: 22rem;
+  /* width: 22rem; */
+}
+
+.under-slider img {
+  width: 20rem;
+  /* flex: 1 0 100%; */
+  /* scroll-snap-align: start;s */
+}
+
+/* SkinHair */
+
+.skinhair-card{
+  padding: 2rem 1rem;
+  margin: 2%;
+  width: 48%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+
+.progress-bar {
+  background-color: #FFD4CB;
+  width: 92;
+  margin: auto;
+  height: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.percentage {
+  display: block;
+  height: 100%;
+  background-color: #FF4647;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+  width: 50%;
 }

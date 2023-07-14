@@ -61,45 +61,129 @@
         <div class="row">
           <div class="column">
             <div class="card" style="background-color: #cdccf3">
-              <img src="images/arrow.png" alt="" />
-              <p>TRACK</p>
+              <img
+                style="height: 4rem; position: relative; top: -9px"
+                src="images/arrow.png"
+                alt=""
+              />
+              <p style="position: relative; top: -7px">TRACK</p>
             </div>
           </div>
           <div class="column">
             <div class="card" style="background-color: #f6fcc5">
-              <img src="images/wallet.png" alt="" />
-              <p>WALLET</p>
+              <img
+                src="images/wallet.png"
+                style="height: 4rem; position: relative; top: -9px"
+                alt=""
+              />
+              <p style="position: relative; top: -7px">WALLET</p>
             </div>
           </div>
           <div class="column">
             <div class="card" style="background-color: #c5eefd">
-              <img src="images/blogs.png" alt="" />
-              <p>BLOGS</p>
+              <img
+                src="images/blogs.png"
+                style="height: 4rem; position: relative; top: -9px"
+                alt=""
+              />
+              <p style="position: relative; top: -7px">BLOGS</p>
             </div>
           </div>
           <div class="column">
             <div class="card" style="background-color: #fdede1">
-              <img src="images/consult.png" alt="" />
-              <p>CONSULT</p>
+              <img
+                src="images/consult.png"
+                style="height: 4rem; position: relative; top: -9px"
+                alt=""
+              />
+              <p style="position: relative; top: -7px">CONSULT</p>
+            </div>
+          </div>
+        </div>
+        <div class="wellness">
+          <div style="display: inline-block; width: 48%; font-size: 1.15rem">
+            Wellness Overview:
+            <div id="wellness-params">
+              <p style="font-size: 2.5rem">40</p>
+              <div id="overweight" style="">Overweight</div>
+            </div>
+            <p style="font-size: 0.8rem; color: grey; margin-left: 0.8rem">
+              Your Current Bmi
+            </p>
+          </div>
+          <div style="display: inline-block; width: 48%">
+            <div style="margin: 0rem 3rem">
+              <div class="wellness-card">
+                <img src="images/weight.png" alt="" /><span>80.5 kgs</span>
+              </div>
+              <div class="wellness-card">
+                <img src="images/sleep.png" alt="" /><span>7/8 Hours</span>
+              </div>
+              <div class="wellness-card">
+                <img src="images/drop.png" alt="" /><span>4/8 Glasses</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skin-hair" style="display: flex">
+          <div class="skinhair-card" style="background-color: #fff5ef">
+            Overall Skin Score:
+            <div id="" style="display: flex; align-items: center; margin-top: 0.8rem">
+              <p style="font-size: 2.5rem; font-weight: 500;">45</p>
+              <div id="" style="margin-left: 1rem;">
+                <p style="margin-bottom: 0.2rem;"><iconify-icon icon="noto:fire"></iconify-icon>&nbsp;5 Weeks</p>
+                <p><iconify-icon icon="tabler:photo-filled" style="color: #de7702;"></iconify-icon>&nbsp;20 uploads</p>
+              </div>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar">
+                  <span class="percentage"></span>
+              </div>
+          </div>
+            <p style="font-size: 1rem; color: grey; margin-top: 0.5rem;">
+              Week: <span style="font-weight: 500;">40/54</span>
+            </p>
+          </div>
+          <div class="skinhair-card" style="background-color: #fef1f5">
+            Hair Tracker
+            <div id="" style="display: flex; align-items: center; margin-top: 0.8rem;justify-content: flex-start; margin-bottom: 1.2rem;">
+              <div id="" style="margin-left: 1rem;">
+                <p style="margin-bottom: 0.2rem;"><iconify-icon icon="noto:fire"></iconify-icon>&nbsp;&nbsp;5 Weeks</p>
+                <p><iconify-icon icon="tabler:photo-filled" style="color: #de7702;"></iconify-icon>&nbsp;&nbsp;20 uploads</p>
+              </div>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar">
+                  <span class="percentage"></span>
+              </div>
+          </div>
+          <p style="font-size: 1rem; color: grey; margin-top: 0.5rem;">
+            Week: <span style="font-weight: 500;">40/54</span>
+          </p>
+          </div>
+        </div>
+        <!-- Slider         -->
+        <div class="slider-container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img src="images/slide-1.png" alt="" />
+              <img src="images/slide-2.png" alt="" />
             </div>
           </div>
         </div>
 
-        <div
-          id="wellness-overview"
-          style="height: 20px; background-color: aqua"
-        ></div>
+        <div id="black-bar">
+          <p>View All Trackers</p>
+          <p>></p>
+        </div>
+        <div class="title">
+          <h1 class="section__title" style="margin-top: 0.25rem">Bestsellers</h1>
+          <div id="view-all">View All</div>
+        </div>
         <div class="scrollmenu">
-          <div class="title">
-            <h1 class="section__title" style="margin-top: 1rem">Bestsellers</h1>
-          </div>
           <div class="nft">
             <div class="main">
-              <img
-                class="tokenImage"
-                src="images/antiageing.png"
-                alt="NFT"
-              />
+              <img class="tokenImage" src="images/antiageing.png" alt="NFT" />
               <h4 style="font-size: 1.1rem">Anti-ageing Combo</h4>
               <span
                 ><iconify-icon
@@ -136,16 +220,17 @@
                 >
               </p>
             </div>
-            <div class="top-left"><img src="images/discount.png" alt=""></div>
-            <div class="top-right"><iconify-icon icon="mdi:heart" style="color: lightgray; font-size:2rem;"></iconify-icon></div>
+            <div class="top-left"><img src="images/discount.png" alt="" /></div>
+            <div class="top-right">
+              <iconify-icon
+                icon="mdi:heart"
+                style="color: lightgray; font-size: 2rem"
+              ></iconify-icon>
+            </div>
           </div>
           <div class="nft">
             <div class="main">
-              <img
-                class="tokenImage"
-                src="images/antiageing.png"
-                alt="NFT"
-              />
+              <img class="tokenImage" src="images/antiageing.png" alt="NFT" />
               <h4 style="font-size: 1.1rem">Anti-ageing Combo</h4>
               <span
                 ><iconify-icon
@@ -182,16 +267,17 @@
                 >
               </p>
             </div>
-            <div class="top-left"><img src="images/discount.png" alt=""></div>
-            <div class="top-right"><iconify-icon icon="mdi:heart" style="color: lightgray; font-size:2rem;"></iconify-icon></div>
+            <div class="top-left"><img src="images/discount.png" alt="" /></div>
+            <div class="top-right">
+              <iconify-icon
+                icon="mdi:heart"
+                style="color: lightgray; font-size: 2rem"
+              ></iconify-icon>
+            </div>
           </div>
           <div class="nft">
             <div class="main">
-              <img
-                class="tokenImage"
-                src="images/antiageing.png"
-                alt="NFT"
-              />
+              <img class="tokenImage" src="images/antiageing.png" alt="NFT" />
               <h4 style="font-size: 1.1rem">Anti-ageing Combo</h4>
               <span
                 ><iconify-icon
@@ -228,11 +314,352 @@
                 >
               </p>
             </div>
-            <div class="top-left"><img src="images/discount.png" alt=""></div>
-            <div class="top-right"><iconify-icon icon="mdi:heart" style="color: lightgray; font-size:2rem;"></iconify-icon></div>
+            <div class="top-left"><img src="images/discount.png" alt="" /></div>
+            <div class="top-right">
+              <iconify-icon
+                icon="mdi:heart"
+                style="color: lightgray; font-size: 2rem"
+              ></iconify-icon>
+            </div>
+          </div>
+        </div>
+        <div class="title">
+          <h1 class="section__title" style="margin-top:0.25rem;">Hair Care</h1>
+          <div id="view-all">View All</div>
+        </div>
+        <div class="scrollmenu">
+          <div class="nft">
+            <div class="main">
+              <img class="tokenImage" src="images/antiageing.png" alt="NFT" />
+              <h4 style="font-size: 1.1rem">Anti-ageing Combo</h4>
+              <span
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><span style="color: grey">(4.7)</span></span
+              >
+              <p style="font-size: 1.4rem">
+                Rs.999
+                <span
+                  style="
+                    text-decoration: line-through;
+                    font-size: 1rem;
+                    color: gray;
+                  "
+                  >Rs.1598</span
+                >
+              </p>
+            </div>
+            <div class="top-left"><img src="images/discount.png" alt="" /></div>
+            <div class="top-right">
+              <iconify-icon
+                icon="mdi:heart"
+                style="color: lightgray; font-size: 2rem"
+              ></iconify-icon>
+            </div>
+          </div>
+          <div class="nft">
+            <div class="main">
+              <img class="tokenImage" src="images/antiageing.png" alt="NFT" />
+              <h4 style="font-size: 1.1rem">Anti-ageing Combo</h4>
+              <span
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><span style="color: grey">(4.7)</span></span
+              >
+              <p style="font-size: 1.4rem">
+                Rs.999
+                <span
+                  style="
+                    text-decoration: line-through;
+                    font-size: 1rem;
+                    color: gray;
+                  "
+                  >Rs.1598</span
+                >
+              </p>
+            </div>
+            <div class="top-left"><img src="images/discount.png" alt="" /></div>
+            <div class="top-right">
+              <iconify-icon
+                icon="mdi:heart"
+                style="color: lightgray; font-size: 2rem"
+              ></iconify-icon>
+            </div>
+          </div>
+          <div class="nft">
+            <div class="main">
+              <img class="tokenImage" src="images/antiageing.png" alt="NFT" />
+              <h4 style="font-size: 1.1rem">Anti-ageing Combo</h4>
+              <span
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><span style="color: grey">(4.7)</span></span
+              >
+              <p style="font-size: 1.4rem">
+                Rs.999
+                <span
+                  style="
+                    text-decoration: line-through;
+                    font-size: 1rem;
+                    color: gray;
+                  "
+                  >Rs.1598</span
+                >
+              </p>
+            </div>
+            <div class="top-left"><img src="images/discount.png" alt="" /></div>
+            <div class="top-right">
+              <iconify-icon
+                icon="mdi:heart"
+                style="color: lightgray; font-size: 2rem"
+              ></iconify-icon>
+            </div>
+          </div>
+        </div>
+        
+        <div class="title">
+          <h1 class="section__title" style="margin-top: 0.25rem">Understanding Hair</h1>
+          <div id="view-all">View All</div>
+        </div>
+        <div id="understanding">
+          <div class="understanding-wrapper">
+            <div class="under-slider">
+              <img src="images/understanding.png" alt="" />
+              <img src="images/understanding-2.png" alt="" />
+              <img src="images/understanding-3.png" alt="" />
+              <img src="images/understanding-4.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Skin -->
+        <div class="title">
+          <h1 class="section__title" style="margin-top: 0.25rem">Skin Care</h1>
+        </div>
+        <div class="scrollmenu">
+          <div class="nft">
+            <div class="main">
+              <img class="tokenImage" src="images/antiageing.png" alt="NFT" />
+              <h4 style="font-size: 1.1rem">Anti-ageing Combo</h4>
+              <span
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><span style="color: grey">(4.7)</span></span
+              >
+              <p style="font-size: 1.4rem">
+                Rs.999
+                <span
+                  style="
+                    text-decoration: line-through;
+                    font-size: 1rem;
+                    color: gray;
+                  "
+                  >Rs.1598</span
+                >
+              </p>
+            </div>
+            <div class="top-left"><img src="images/discount.png" alt="" /></div>
+            <div class="top-right">
+              <iconify-icon
+                icon="mdi:heart"
+                style="color: lightgray; font-size: 2rem"
+              ></iconify-icon>
+            </div>
+          </div>
+          <div class="nft">
+            <div class="main">
+              <img class="tokenImage" src="images/antiageing.png" alt="NFT" />
+              <h4 style="font-size: 1.1rem">Anti-ageing Combo</h4>
+              <span
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><span style="color: grey">(4.7)</span></span
+              >
+              <p style="font-size: 1.4rem">
+                Rs.999
+                <span
+                  style="
+                    text-decoration: line-through;
+                    font-size: 1rem;
+                    color: gray;
+                  "
+                  >Rs.1598</span
+                >
+              </p>
+            </div>
+            <div class="top-left"><img src="images/discount.png" alt="" /></div>
+            <div class="top-right">
+              <iconify-icon
+                icon="mdi:heart"
+                style="color: lightgray; font-size: 2rem"
+              ></iconify-icon>
+            </div>
+          </div>
+          <div class="nft">
+            <div class="main">
+              <img class="tokenImage" src="images/antiageing.png" alt="NFT" />
+              <h4 style="font-size: 1.1rem">Anti-ageing Combo</h4>
+              <span
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><iconify-icon
+                  icon="material-symbols:star"
+                  style="color: black"
+                ></iconify-icon
+                ><span style="color: grey">(4.7)</span></span
+              >
+              <p style="font-size: 1.4rem">
+                Rs.999
+                <span
+                  style="
+                    text-decoration: line-through;
+                    font-size: 1rem;
+                    color: gray;
+                  "
+                  >Rs.1598</span
+                >
+              </p>
+            </div>
+            <div class="top-left"><img src="images/discount.png" alt="" /></div>
+            <div class="top-right">
+              <iconify-icon
+                icon="mdi:heart"
+                style="color: lightgray; font-size: 2rem"
+              ></iconify-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="title">
+          <h1 class="section__title" style="margin-top: 0.25rem">Skin Talk</h1>
+        </div>
+        <div id="understanding">
+          <div class="understanding-wrapper">
+            <div class="under-slider">
+              <img src="images/skin-1.png" alt="" />
+              <img src="images/skin-2.png" alt="" />
+              <img src="images/skin-3.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div id="black-bar">
+          <div style="display: flex; align-items: center">
+            <iconify-icon
+              icon="skill-icons:instagram"
+              width="32"
+            ></iconify-icon>
+            <p>&nbsp; Join our 10K family on Instagram</p>
           </div>
 
+          <p>></p>
         </div>
+
+
       </section>
 
       <section
